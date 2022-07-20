@@ -1,7 +1,59 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto&display=swap');
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Outfit', sans-serif;
+
+// colors
 $primaryColor: #031145;
-$textColor: #e5e5e5;
+$textColor: #fff;
+$linkHover: #ccc;
+
+// reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: $primaryColor;
   color: $textColor;
+  font-family: $primaryFont;
+  font-size: 20px;
+  padding: 10px;
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
+  &:hover {
+    color: $linkHover;
+  }
+}
+
+main.container {
+  max-width: 1064px;
+  margin: auto;
+}
+
+nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: $secondaryFont;
+
+  h1.site-title {
+    font-weight: 700;
+    font-size: inherit;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin-left: 3.5rem;
+    }
+  }
 }

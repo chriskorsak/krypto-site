@@ -1,6 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #031145;
-  color: #e5e5e5;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ccc;
+}
+
+main.container {
+  max-width: 1064px;
+  margin: auto;
+}
+
+nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Outfit", sans-serif;
+}
+nav h1.site-title {
+  font-weight: 700;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 3.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
