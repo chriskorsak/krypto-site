@@ -38,6 +38,11 @@ h3 {
   text-transform: uppercase;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .btn-secondary, .btn-primary {
   display: inline-block;
   transition: all 0.5s;
@@ -52,7 +57,7 @@ h3 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   min-width: 150px;
 }
 .btn-secondary:hover, .btn-primary:hover {
@@ -78,6 +83,20 @@ main.container {
   grid-template-columns: 1fr 1fr;
 }
 
+.col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col.col-text-left {
+  padding-right: 4rem;
+}
+
+.col.col-text-right {
+  padding-left: 4rem;
+}
+
 nav {
   margin-top: 2rem;
   display: flex;
@@ -100,9 +119,6 @@ nav ul li {
 section#hero {
   margin-top: 6rem;
 }
-section#hero div.col:first-of-type {
-  padding-right: 4rem;
-}
 section#hero h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -112,10 +128,6 @@ section#hero h1 {
 }
 section#hero p {
   margin: 1.5rem 0;
-}
-section#hero img {
-  width: 100%;
-  height: auto;
 }
 
 section#featured-brands {
@@ -135,6 +147,23 @@ section#featured-brands .brand-logos {
 section#featured-brands .brand-logos img {
   width: auto;
   max-height: 53px;
+}
+
+section.benefit {
+  margin-top: 7rem;
+}
+section.benefit h3 {
+  margin-bottom: 8px;
+}
+section.benefit h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 110%;
+  text-transform: capitalize;
+  margin: 15px 0;
+}
+section.benefit p {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
