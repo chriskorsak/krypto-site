@@ -13,6 +13,14 @@ body {
   padding: 10px;
 }
 
+.mx {
+  margin: 0 15px;
+}
+
+.my {
+  margin: 15px 0;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -21,9 +29,44 @@ a:hover {
   color: #ccc;
 }
 
+.btn-secondary, .btn-primary {
+  display: inline-block;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  height: 57px;
+  border-radius: 69px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  min-width: 150px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(105%);
+}
+
+.btn-primary {
+  background-color: #7e80d7;
+}
+.btn-secondary {
+  background-color: inherit;
+  border: 1px solid #89d0d1;
+}
+
 main.container {
   max-width: 1064px;
   margin: auto;
+}
+
+.two-col-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 nav {
@@ -32,7 +75,7 @@ nav {
   justify-content: space-between;
   font-family: "Outfit", sans-serif;
 }
-nav h1.site-title {
+nav h2.site-title {
   font-weight: 700;
   font-size: inherit;
   text-transform: uppercase;
@@ -43,6 +86,27 @@ nav ul {
 }
 nav ul li {
   margin-left: 3.5rem;
+}
+
+section#hero {
+  margin-top: 6rem;
+}
+section#hero div.col:first-of-type {
+  padding-right: 4rem;
+}
+section#hero h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 87px;
+  line-height: 110%;
+  text-transform: capitalize;
+}
+section#hero p {
+  margin: 1.5rem 0;
+}
+section#hero img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
