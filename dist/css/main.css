@@ -29,6 +29,15 @@ a:hover {
   color: #ccc;
 }
 
+h3 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .btn-secondary, .btn-primary {
   display: inline-block;
   transition: all 0.5s;
@@ -39,7 +48,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: inherit;
-  line-height: 28px;
+  line-height: 1.4rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #fff;
@@ -107,6 +116,25 @@ section#hero p {
 section#hero img {
   width: 100%;
   height: auto;
+}
+
+section#featured-brands {
+  margin-top: 3.5rem;
+}
+section#featured-brands .brand-logos {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.7;
+  padding: 14px 0;
+  background-color: #8f8fdc;
+  height: 80px;
+  border-radius: 10px;
+}
+section#featured-brands .brand-logos img {
+  width: auto;
+  max-height: 53px;
 }
 
 /*# sourceMappingURL=main.css.map */
